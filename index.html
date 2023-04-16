@@ -1,5 +1,15 @@
 <html>
   <head>
+    <style>
+      #graph1 {
+        height: 50%;
+        float: top;
+      }
+      #graph2 {
+        height: 50%;
+        float: bottom;
+      }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -10,7 +20,7 @@
     <div id="graph2"></div>
 
     <script type="text/javascript">
-      vegaEmbed('#graph1', 'graph1.json');
+      vegaEmbed('#graph1', 'graph1alt.json');
       vegaEmbed('#graph2', 'graph2.json');
     </script>
   </body>
