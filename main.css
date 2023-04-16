@@ -56,13 +56,14 @@ p {
 #graph1, #graph2, #graph3 {
     height: 50%;
     width: 100%;
-    margin: 0 auto;
+    margin:0 auto;
     display: block;
 }
+
 /* Add these styles to main.css */
 .graph-container {
     text-align : center;
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
 }
