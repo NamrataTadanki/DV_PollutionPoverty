@@ -13,16 +13,17 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
- 
   </head>
-  <body>
 
+  <body>
     <div id="graph1"></div>
     <div id="graph2"></div>
 
     <script type="text/javascript">
-      vegaEmbed('#graph1', 'graph1.json');
+      vega.convert(plotlyChart, {}, function(error, result) {
+      vegaEmbed('#graph1', result);});
       vegaEmbed('#graph2', 'graph2.json');
     </script>
+    
   </body>
 </html>
