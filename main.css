@@ -61,6 +61,7 @@ p {
 }
 /* Add these styles to main.css */
 .graph-container {
+    text-align : center;
     display: flex;
     justify-content: right;
     align-items: right;
