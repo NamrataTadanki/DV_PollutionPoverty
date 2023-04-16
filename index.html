@@ -1,27 +1,123 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecological Footprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      #graph1 {
-        height: 50%;
-        width: 100%;
-      }
-      #graph2 {
-        height: 50%;
-        width: 100%;
-      }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://source.unsplash.com/1600x900/?nature,ecology');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(56, 142, 60, 0.9);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2rem;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        main {
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(245, 245, 245, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            color: #388E3C;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #graph1, #graph2, #graph3 {
+            height: 50%;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+        
     </style>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  </head>
-  <body>
-
-    <div id="graph1"></div>
-    <div id="graph2"></div>
-
-    <script type="text/javascript">
-      vegaEmbed('#graph1', 'graph1.json');
-      vegaEmbed('#graph2', 'graph2.json');
-    </script>
-  </body>
+</head>
+<body>
+    <header>
+        <h1>Ecological Footprint: Pollution and Poverty around the World</h1>
+    </header>
+    <main>
+      <section id="graph1-container">
+        <h2>Total Pollution by Country</h2>
+        <p>
+            This interactive graph displays the total pollution levels for each country. You can hover over individual data points to see more details about a specific country.
+        </p>
+        <div class="graph-container">
+            <div id="graph1"></div>
+        </div>
+    </section>
+        <section id="text-container">
+            <h2>About the relationship between Pollution and Poverty</h2>
+            <p>
+                <!-- Add your descriptive text here -->
+            </p>
+        </section>
+        <section id="graph
+        <!-- Add your descriptive text here -->
+      </p>
+  </section>
+  <section id="graph2-container">
+    <h2>Pollution and Poverty by Region</h2>
+    <p>
+        Explore the relationship between poverty and pollution with this interactive graph. You can hover over individual data points to
+        examine the connection between poverty rates and pollution levels in various regions.
+        These two graphs show pollution levels by region, allowing you to compare and analyze the environmental impact across different geographical areas by different ecological footprints.
+        You can select specific regions to highlight the data points in the scatter plot (and the trend line) while also modifying the visualization of the bar chart to only showcase the specific region.
+    </p>
+    <div class="graph-container">
+        <div id="graph2"></div>
+    </div>
+</section>
+</main>
+<script type="text/javascript">
+  vegaEmbed('#graph1', 'graph1.json');
+  vegaEmbed('#graph2', 'graph2.json');
+  vegaEmbed('#graph3', 'graph3.json');
+</script>
+</body>
 </html>
