@@ -21,8 +21,7 @@
     <div id="graph2"></div>
 
     <script type="text/javascript">
-      Plotly.d3.json('graph1.json', function(err, data) {
-        Plotly.newPlot('#graph1', data);});
+      Plotly.newPlot('graph1', data, {json: 'graph1.json'});
       vegaEmbed('#graph2', 'graph2.json');
     </script>
   </body>
