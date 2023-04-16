@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,ecology');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(56, 142, 60, 0.9);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: #388E3C;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#graph1, #graph2, #graph3 {
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+/* Add these styles to main.css */
+.graph-container {
+    text-align : center;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
